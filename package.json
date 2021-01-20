@@ -1,0 +1,11 @@
+{
+  "name": "wetube_challenge",
+  "version": "1.0.0",
+  "description": "Cloning youtube w vanillaJS and NodeJs",
+  "main": "index.js",
+  "author": "D H Lee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

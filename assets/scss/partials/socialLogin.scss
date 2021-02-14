@@ -23,8 +23,14 @@
     background-color: $black;
     color: white;
   }
-  .social-login--facebook {
-    background-color: #3b5998;
+  .social-login--naver {
+    background-color: #3eaf0e;
     color: white;
   }
+}
+
+.social-login__a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,6 +1,6 @@
 import express from "express";
 import passport from "passport";
-import { getJoin,  getLogin,  githubLogin,  logout, getMe, postGithubLogin, postJoin, postLogin } from "../controllers/userController";
+import { getJoin,  getLogin,  githubLogin,  logout, getMe, postGithubLogin, postJoin, postLogin, naverLogin, postNaverLogin } from "../controllers/userController";
 import { home, search } from "../controllers/videoController";
 import { onlyPrivate, onlyPublic } from "../middlewares";
 import routes from "../routes";
@@ -20,6 +20,10 @@ globalRouter.get(routes.logout,onlyPrivate,logout);
 globalRouter.get(routes.gitHub,githubLogin);
 
 globalRouter.get(routes.githubCallback,passport.authenticate("github",{failureRedirect:"/login"}),postGithubLogin);
+
+globalRouter.get(routes.naver,naverLogin);
+
+globalRouter.get(routes.naverCallback,passport.authenticate("naver",{failureRedirect:"/login"}),postNaverLogin);
 
 globalRouter.get(routes.me,getMe);
 

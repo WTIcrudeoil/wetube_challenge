@@ -1,10 +1,17 @@
 .social-login
     button.social-login--github
-        a(href=routes.gitHub)
+        a(href=routes.gitHub).social-login__a
             span
                 i.fab.fa-github 
             |Continue with Github
-    button.social-login--facebook
-        span
-            i.fab.fa-facebook
-        |Continue with facebook
+    button.social-login--naver
+        a.social-login__a(href=routes.naver)
+            span
+                <svg id="naver"  width="20" height="20" viewBox="0 0 32 32">
+                    <title>soc020 - Regular</title>
+                    <g  color="white"><g id="Regular-10" data-name="Regular"><g id="layer1"><path id="path2830" fill="currentcolor" d="M3.2,4.632,3.128,27.3l8.912.036.036-9.167L11.489,15.3,19.924,27.3l8.948.073L28.835,4.705l-8.948-.036.183,9.351.587,3.337L12.076,4.669,3.2,4.632Z"/>
+                    </g>
+                    </g>
+                    </g>
+                    </svg>
+            |Continue with Naver

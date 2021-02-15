@@ -17,4 +17,5 @@ module.exports = {
     "spaced-comment":"off",
     "no-else-return":"off"
   },
+ 
 };

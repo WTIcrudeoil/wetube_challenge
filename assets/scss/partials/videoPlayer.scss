@@ -24,8 +24,16 @@
     .videoPlayer__column:first-child {
       display: flex;
       align-items: center;
+      position: relative;
       span:first-child {
         margin-right: 10px;
+      }
+      .videoPlayer__volume {
+        position: absolute;
+        width: 100px;
+        left: -45px;
+        bottom: 70px;
+        transform: rotateZ(-90deg);
       }
     }
     .videoPlayer__column:last-child {

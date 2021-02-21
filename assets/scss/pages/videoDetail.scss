@@ -36,6 +36,9 @@
     margin-top: 25px;
     .video__comment-number {
       font-size: 18px;
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
     }
     .add__comment {
       margin-top: 25px;
@@ -47,12 +50,17 @@
     .video__comments-list {
       margin-top: 50px;
       li {
+        position: relative;
         background-color: #3498db;
         color: white;
         padding: 15px 30px;
         border-radius: 20px;
         &:not(:last-child) {
           margin-bottom: 15px;
+        }
+        a {
+          position: absolute;
+          right: 5px;
         }
       }
     }
